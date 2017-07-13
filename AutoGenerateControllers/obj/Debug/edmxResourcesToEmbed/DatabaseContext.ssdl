@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UdemyCodeFirstExpModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adresler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AddressDetail" Type="nvarchar(max)" />
+    <Property Name="KisiId_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Kisiler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Yas" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_Adresler_dbo_Kisiler_KisiId_Id">
+    <End Role="Kisiler" Type="Self.Kisiler" Multiplicity="0..1" />
+    <End Role="Adresler" Type="Self.Adresler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kisiler">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adresler">
+        <PropertyRef Name="KisiId_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UdemyCodeFirstExpModelStoreContainer">
+    <EntitySet Name="Adresler" EntityType="Self.Adresler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kisiler" EntityType="Self.Kisiler" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_Adresler_dbo_Kisiler_KisiId_Id" Association="Self.FK_dbo_Adresler_dbo_Kisiler_KisiId_Id">
+      <End Role="Kisiler" EntitySet="Kisiler" />
+      <End Role="Adresler" EntitySet="Adresler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

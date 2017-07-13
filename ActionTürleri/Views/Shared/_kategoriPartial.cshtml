@@ -1,0 +1,16 @@
+﻿@{
+    List<string> kategoriler = new List<string>()
+    {
+
+        "test1",
+        "test2",
+        "test3",
+        "test4"
+    };
+}
+<ul>
+    @foreach (string kategori in kategoriler)
+    {
+        <li><a href="#">@kategori</a></li>
+    }
+</ul>

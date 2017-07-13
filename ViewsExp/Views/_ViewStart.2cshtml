@@ -1,0 +1,4 @@
+﻿@{
+    //bir view page dir. Ve bu sayfaya layout tanımını tek bir yerden yapmayı saglar yani burda varsayılan layout burada belirtilir
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}

@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sayfamiz</title>
+</head>
+<body>
+
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.TextBox("ad", "", new { placeholder = "ad" })<br />
+            @Html.TextBox("soyad", "", new { placeholder = "soyad" })<br />
+            <hr />
+            <button type="submit">Kaydet</button>
+        }
+
+    </div>
+    <div>
+        <hr />
+    </div>
+    <div>
+        @if (ViewBag.Data != null)
+        {
+            <ul>
+                @foreach (string item in (List<string>)ViewBag.Data)
+                {
+                    <li>@item</li>
+                }
+            </ul>
+        }
+
+    </div>
+</body>
+</html>

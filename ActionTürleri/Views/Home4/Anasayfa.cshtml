@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Anasayfa</title>
+</head>
+<body>
+<div>
+    <h2>Anasayfa</h2>
+</div>
+<div>
+    <hr/>
+    @*@Html.Partial("_kategoriPartial") eğer sadece html den oluşmuş bir partial çağtılcak ise bu şekilde çağrılabilr ancak kod gerekn bişey ise code behind dan çağırmak lazım*@
+    @Html.Action("KategorilerPartialGetir")
+    <hr/>
+    @Html.Action("Kategoriler2PartialGetir")
+</div>
+</body>
+</html>

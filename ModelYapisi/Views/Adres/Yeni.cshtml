@@ -1,0 +1,35 @@
+﻿@model ModelYapisi.Models.Adress
+@{
+    ViewBag.Title = "Yeni";
+}
+
+<h2>Yeni Adres</h2>
+@using (Html.BeginForm())
+{
+    <div class="input-group">
+        <span class="input-group-addon" id="txtAdres">Adres :</span>
+        @Html.TextAreaFor(x => x.AddressDetail, new { @class = "form-control", placeholder = "Adres", aria_describedby = "txtAdres", cols = "30", rows = "10" })
+    </div>
+    <br />
+
+    <div class="input-group">
+        <span class="input-group-addon" id="ddlKisiler">Kişiler :</span>
+        @Html.DropDownListFor(x => x.KisiId.Id, (List<SelectListItem>)ViewBag.KisiList, new { @class = "form-control", placeholder = "Adres", aria_describedby = "txtAdres", cols = "30", rows = "10" })
+    </div>
+    <br />
+
+    <div class="input-group">
+        <input type="submit" value="Kaydet" class="btn btn-success" />
+    </div>
+
+    <br />
+
+    <div class="input-group">
+        @if (ViewBag.Result != null)
+        {
+
+            <div class="alert alert-@ViewBag.Status" role="alert">@ViewBag.Result</div>
+
+        }
+    </div>
+}

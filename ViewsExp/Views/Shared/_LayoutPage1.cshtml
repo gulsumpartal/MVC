@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+        .block {
+            display: block;
+            margin: 10px;
+            border: 2px dotted gray;
+            padding: 10px;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+           .block2 {
+            display: inline-block;
+            margin: 10px;
+            border: 2px dotted orange;
+            padding: 10px;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+        #menu ul li {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #000a44;
+            background-color: #0026ff;
+            margin: 5px;
+
+        }
+        #menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: smaller;
+        }
+        #menu li:hover {
+            background-color:#0094ff 
+         }
+        #menu li:hover a {
+            color: #000a44;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu" class="block">
+        @*header*@
+        <ul>
+            <li>@Html.ActionLink("Home Page", "HomePage", "Home")</li>
+            <li>@Html.ActionLink("About", "About","Home")</li>
+            <li>@Html.ActionLink("Contact", "Contact","Home")</li>
+        </ul>
+    </div>
+    <div  class="block">
+        @*Sayfanın degişken olan kısmı gelir renderbody sayesinde*@
+        @RenderBody()
+    </div>
+    <div  class="block">
+        @*footer*@
+        <b> Tüm hakları saklıdır. &copy;</b>
+    </div>
+</body>
+</html>

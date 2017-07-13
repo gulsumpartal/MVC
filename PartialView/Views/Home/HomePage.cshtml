@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomePage</title>
+</head>
+<body>
+    <div>
+        header
+    </div>
+    <div>
+        body
+        @ViewData["text1"]
+        <br/>
+        <p> Bool data : </p> @ViewData["check1"]
+        
+        <p> view bag data</p>@ViewBag.text2
+    </div>
+    <div>
+        footer
+
+    </div>
+</body>
+</html>
