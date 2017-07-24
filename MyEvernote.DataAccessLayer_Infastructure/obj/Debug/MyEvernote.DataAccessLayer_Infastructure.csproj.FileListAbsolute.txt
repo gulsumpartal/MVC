@@ -1,0 +1,16 @@
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\MyEvernote.DataAccessLayer_Infastructure.dll.config
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\MyEvernote.DataAccessLayer_Infastructure.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\MyEvernote.DataAccessLayer_Infastructure.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\EntityFramework.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\FakeData.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\MyEvernote.Common.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\MyEvernote.Common.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\EntityFramework.xml
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\bin\Debug\FakeData.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\obj\Debug\MyEvernote.DataAccessLayer_Infastructure.csprojResolveAssemblyReference.cache
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\obj\Debug\MyEvernote.DataAccessLayer_Infastructure.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\obj\Debug\MyEvernote.DataAccessLayer_Infastructure.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\obj\Debug\MyEvernote.DataAccessLayer_Infastructure.Migrations.CreateDatabase.resources
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.DataAccessLayer_Infastructure\obj\Debug\MyEvernote.DataAccessLayer_Infastructure.csproj.GenerateResource.Cache

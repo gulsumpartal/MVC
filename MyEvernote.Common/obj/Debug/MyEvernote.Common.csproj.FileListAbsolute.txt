@@ -1,0 +1,5 @@
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Common\bin\Debug\MyEvernote.Common.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Common\bin\Debug\MyEvernote.Common.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Common\obj\Debug\MyEvernote.Common.csprojResolveAssemblyReference.cache
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Common\obj\Debug\MyEvernote.Common.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Common\obj\Debug\MyEvernote.Common.pdb

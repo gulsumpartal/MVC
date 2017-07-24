@@ -44,3 +44,11 @@ C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\System.Web.Mvc.xm
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\obj\Debug\MyEvernote.Web.csprojResolveAssemblyReference.cache
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\obj\Debug\MyEvernote.Web.dll
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\obj\Debug\MyEvernote.Web.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\MyEvernote.BusinessLayer_Core.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\MyEvernote.Common.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\MyEvernote.BusinessLayer_Core.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\MyEvernote.Common.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.xml
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.SqlServer.xml
