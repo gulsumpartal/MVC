@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MyEvernote.Common;
+using MyEvernote.DataAccessLayer_Infastructure.EntityFramework;
 
 namespace MyEvernote.BusinessLayer_Core
 {
     public class Test
     {
         Reporsitory<EvernoteUser> userRepo = new Reporsitory<EvernoteUser>();
+        Reporsitory<Comment> commentReporsitory = new Reporsitory<Comment>();
+        Reporsitory<Note> noteReporsitory= new Reporsitory<Note>();
+
         public Test()
         {
             Reporsitory<Category> repo = new Reporsitory<Category>();
@@ -46,6 +46,26 @@ namespace MyEvernote.BusinessLayer_Core
 
                 userRepo.Update(user);
             }
+        }
+
+        public void InsertComment()
+        {
+            var user = userRepo.Find(p => p.Id == 1);
+            Note note = noteReporsitory.Find(p => p.Title == "test");
+            
+
+            Comment comment = new Comment()
+            {
+                Text = "test",
+                CrearedUsername = "gulsumpartal",
+                CeratedOn = DateTime.Now,
+                ModifiedOn= DateTime.Now,
+                ModifiedUsername="gulsumpartal",
+                Note = note,
+                EvernoteUser = user
+            };
+            commentReporsitory.Insert(comment);
+
         }
       
     }

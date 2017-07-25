@@ -14,7 +14,7 @@ namespace MyEvernote.Web.Controllers
         {
             Test test = new Test();
             //test.InsertUserTest();
-            test.Update();
+            test.InsertComment();
             return View();
         }
     }

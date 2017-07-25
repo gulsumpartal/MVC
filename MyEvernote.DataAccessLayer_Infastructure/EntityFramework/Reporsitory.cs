@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using MyEvernote.DataAccessLayer_Infastructure;
 
-namespace MyEvernote.BusinessLayer_Core
+namespace MyEvernote.DataAccessLayer_Infastructure.EntityFramework
 {
     //where yazma nedenimiz db.Set<T> içierisinde int tipinde de değer gelebilir 
     //where ile sadece instance alınabilen yani new lenen bir class gelebilir şekline çekildi
-    public class Reporsitory<T> where T : class 
+    public class Reporsitory<T>:RepositoryBase where T : class 
     {
-        private DatabaseContext db = new DatabaseContext();
         private DbSet<T> _objectSet;
         public Reporsitory()
         {
+            
             //db.Set<T>() sürekli tekrarlandığı için bu class ilk oluşuyrken elde etmeyi amaçladı
             _objectSet = db.Set<T>();
         }

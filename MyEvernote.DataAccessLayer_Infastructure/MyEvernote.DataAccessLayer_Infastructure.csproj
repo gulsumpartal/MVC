@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
+    <Compile Include="EntityFramework\Reporsitory.cs" />
+    <Compile Include="EntityFramework\RepositoryBase.cs" />
     <Compile Include="Migrations\201707241920207_CreateDatabase.cs" />
     <Compile Include="Migrations\201707241920207_CreateDatabase.Designer.cs">
       <DependentUpon>201707241920207_CreateDatabase.cs</DependentUpon>
