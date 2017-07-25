@@ -52,3 +52,5 @@ C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.d
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.SqlServer.dll
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.xml
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\MyEvernote.DataAccessLayer_Infastructure.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.Web\bin\MyEvernote.DataAccessLayer_Infastructure.pdb

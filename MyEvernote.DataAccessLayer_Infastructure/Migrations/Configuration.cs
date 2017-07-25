@@ -26,6 +26,8 @@ namespace MyEvernote.DataAccessLayer_Infastructure.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+
         }
     }
 }

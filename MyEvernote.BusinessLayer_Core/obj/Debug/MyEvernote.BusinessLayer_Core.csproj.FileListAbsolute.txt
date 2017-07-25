@@ -9,3 +9,6 @@ C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\bin\De
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\obj\Debug\MyEvernote.BusinessLayer_Core.csprojResolveAssemblyReference.cache
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\obj\Debug\MyEvernote.BusinessLayer_Core.dll
 C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\obj\Debug\MyEvernote.BusinessLayer_Core.pdb
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\bin\Debug\MyEvernote.BusinessLayer_Core.dll.config
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GulsumPARTAL\Desktop\WorkSpace\MVC\MyEvernote.BusinessLayer_Core\bin\Debug\EntityFramework.SqlServer.xml

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MyEvernote.BusinessLayer_Core;
 
 namespace MyEvernote.Web.Controllers
 {
@@ -11,6 +12,9 @@ namespace MyEvernote.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            Test test = new Test();
+            //test.InsertUserTest();
+            test.Update();
             return View();
         }
     }
