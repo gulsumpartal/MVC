@@ -1,21 +1,17 @@
-﻿@{
+﻿@using MyEvernote.Common
+@model List<Note>
+
+@{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
 <div class="container">
 
     <div class="row">
 
         <div class="col-md-3">
-            <p class="lead">Categoriler</p>
-            <div class="list-group">
-                <a href="#" class="list-group-item"><span class="glyphicon  glyphicon-arrow-right"></span> Tümü</a>
-                <a href="#" class="list-group-item"><span class="glyphicon  glyphicon-arrow-right"></span> Category 1</a>
-                <a href="#" class="list-group-item"><span class="glyphicon  glyphicon-arrow-right"></span> Category 2</a>
-                <a href="#" class="list-group-item"><span class="glyphicon  glyphicon-arrow-right"></span> Category 3</a>
-            </div>
+            @Html.Partial("~/Views/Category/_PartialCategories.cshtml")
         </div>
 
         <div class="col-md-9">
@@ -52,161 +48,45 @@
             </div>
 
             <div class="row">
+                @foreach (Note item in Model)
+                {
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="@item.Title">
+                            <div class="caption">
+                                <h4>
+                                    <a href="#">@item.Title</a>
+                                </h4>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4>
-                                <a href="#">First Product</a>
-                            </h4>
-                            <h6>
-                                <span class="glyphicon glyphicon-time">  01.01.2017 </span><br />
-                                <span class="glyphicon glyphicon-user"></span>  kullanici
+                                @if (!string.IsNullOrEmpty(item.Text) && item.Text.Length > 65)
+                                {
+                                    <p>@(item.Text.Substring(0, 65) + " ..." )</p>
+                                    <p><a href="#" class="btn btn-default btn-sm">devamı <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+                                }
+                                else
+                                {
+                                    <p>@(item.Text)</p>
+                                }
 
-                            </h6>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
 
-                        </div>
-                        <div><hr /></div>
-                        <div class="ratings">
-                            <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
-                            <p>
-                                <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                         
-                            <h6>
-                                <span class="glyphicon glyphicon-time">  01.01.2017 </span><br />
-                                <span class="glyphicon glyphicon-user"></span>  kullanici
 
-                            </h6>
-                            <h4>
-                                <a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <h6>
+                                    <span class="glyphicon glyphicon-user"></span>  @item.EvernoteUser.Username<br />
+                                    <span class="glyphicon glyphicon-time"> @item.ModifiedOn.ToShortDateString() </span>
+                                </h6>
 
-                        </div>
-                        <div><hr /></div>
-                        <div class="ratings">
-                            <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
-                            <p>
-                                <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
-                            </p>
+                            </div>
+                            <div><hr /></div>
+                            <div class="ratings">
+                                <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
+                                <p>
+                                    <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                           
-                            <h6>
-                                <span class="glyphicon glyphicon-time">  01.01.2017 </span><br />
-                                <span class="glyphicon glyphicon-user"></span>  kullanici
-
-                            </h6>
-                            <h4>
-                                <a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-
-                        </div>
-                        <div><hr /></div>
-                        <div class="ratings">
-                            <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
-                            <p>
-                                <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            
-                            <h6>
-                                <span class="glyphicon glyphicon-time">  01.01.2017 </span><br />
-                                <span class="glyphicon glyphicon-user"></span>  kullanici
-
-                            </h6>
-                            <h4>
-                                <a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-
-                        </div>
-                        <div><hr /></div>
-                        <div class="ratings">
-                            <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
-                            <p>
-                                <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            
-                            <h6>
-                                <span class="glyphicon glyphicon-time">  01.01.2017 </span><br />
-                                <span class="glyphicon glyphicon-user"></span>  kullanici
-
-                            </h6>
-                            <h4>
-                                <a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-
-                        </div>
-                        <div><hr /></div>
-                        <div class="ratings">
-                            <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
-                            <p>
-                                <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            
-                            <h6>
-                                <span class="glyphicon glyphicon-time">  01.01.2017 </span><br />
-                                <span class="glyphicon glyphicon-user"></span>  kullanici
-
-                            </h6>
-                            <h4>
-                                <a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-
-                        </div>
-                        <div><hr /></div>
-                        <div class="ratings">
-                            <p class="pull-right"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment"></span> Yorumlar</button></p>
-                            <p>
-                                <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-star-empty"></span>  15</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-           
             </div>
 
         </div>

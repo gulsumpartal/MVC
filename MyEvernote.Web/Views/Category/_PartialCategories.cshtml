@@ -1,0 +1,17 @@
+﻿@using MyEvernote.BusinessLayer_Core
+@using MyEvernote.Common
+@{
+    CategoryService service = new CategoryService();
+    var categories = service.GetCategories();
+}
+
+<p class="lead">Kategoriler</p>
+<div class="list-group">
+    <a href="/" class="list-group-item"><span class="glyphicon  glyphicon-arrow-right"></span> Tümü</a>
+    
+    @foreach (var item in categories)
+    {
+        <a href="/Category/Select/@item.Id" title="@item.Description" class="list-group-item"><span class="glyphicon  glyphicon-arrow-right"></span>@item.Title</a>
+
+    }
+</div>

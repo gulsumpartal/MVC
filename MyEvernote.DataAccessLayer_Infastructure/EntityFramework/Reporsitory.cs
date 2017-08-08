@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using MyEvernote.DataAccessLayer_Infastructure.Abstract;
 
 namespace MyEvernote.DataAccessLayer_Infastructure.EntityFramework
 {
     //where yazma nedenimiz db.Set<T> içierisinde int tipinde de değer gelebilir 
+
     //where ile sadece instance alınabilen yani new lenen bir class gelebilir şekline çekildi
-    public class Reporsitory<T>:RepositoryBase where T : class 
+    public class Reporsitory<T>:RepositoryBase,IRepository<T> where T : class
     {
         private DbSet<T> _objectSet;
         public Reporsitory()
@@ -23,6 +25,10 @@ namespace MyEvernote.DataAccessLayer_Infastructure.EntityFramework
             return _objectSet.ToList();
         }
 
+        public IQueryable<T> ListQueryable()
+        {
+            return _objectSet.AsQueryable<T>();
+        }
         public List<T> List(Expression<Func<T,bool>> where)
         {
             return _objectSet.Where(where).ToList();
@@ -44,7 +50,7 @@ namespace MyEvernote.DataAccessLayer_Infastructure.EntityFramework
             _objectSet.Remove(obj);
             return Save();
         }
-        protected int Save()
+        public int Save()
         {
             return db.SaveChanges();
         }
@@ -53,5 +59,6 @@ namespace MyEvernote.DataAccessLayer_Infastructure.EntityFramework
         {
             return _objectSet.Where(where).FirstOrDefault();
         }
+        
     }
 }
